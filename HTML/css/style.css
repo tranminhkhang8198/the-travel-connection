@@ -2575,6 +2575,9 @@ footer {
 	margin-top: 34px;
 	padding-right: 30px;
 }
+.bt-icon {
+	margin-top: 20px !important;
+}
 
 /* ================== USER PROFILE =================== */
 
