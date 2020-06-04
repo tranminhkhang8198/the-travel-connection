@@ -58,26 +58,21 @@
 									</div>
                                 </div>
 								<div class="col-xl-6 col-lg-6 col-md-12">
-                                    <h4>Delivery in :</h4>
-									<div class="place-bid-form delivery">
+                                    <h4>Duration :</h4>                                    
+									  <div class="place-bid-form">
 									  <form>                                      
-									  <div class="form-row align-items-center">
-										<div class="col-auto">
-										  <label class="sr-only" for="inlineFormInputGroup">Username</label>
-										  <div class="input-group mb-2">
-											<div class="input-group-prepend">
-											  <div class="input-group-text">Days</div>
+										  <div class="form-row align-items-center">
+											<div class="col-auto">
+											  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+											  <div class="input-group mb-2">
+												<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="10">
+												<div class="input-group-prepend">
+												  <div class="input-group-text">Days</div>
+												</div>
+											  </div>
 											</div>
-											<select id="exampleFormControlSelect1" class="form-control">
-											<option>10</option>
-											<option>20</option>
-											<option>30</option>
-											<option>40</option>
-										  </select>
 										  </div>
-										</div>
-									  </div>
-									</form>
+										</form>
 									</div>
                                 </div>
                             </div>
@@ -89,8 +84,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="place-bid-btn">Place a Bid</button>
-                    <button>Cancel</button>
+                    <button class="place-bid-btn hide-modal" data-dismiss="modal">Place a Bid</button>
+                    <button class="hide-modal" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
@@ -356,7 +351,6 @@
                                                 <ul class="bk-links">
                                                     <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
                                                     <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
-                                                    <li><a href="#" title="" class="bid_now">Bid Now</a></li>
                                                 </ul>
                                             </div>
                                             <div class="job_descp accountnone">
@@ -491,7 +485,7 @@
                                     <!--widget-jobs end-->
                                     <div class="widget widget-jobs">
                                         <div class="sd-title">
-                                            <h3>Project Link</h3>
+                                            <h3>Tour Link</h3>
                                             <i class="la la-ellipsis-v"></i>
                                         </div>
                                         <div class="sd-title copylink">
@@ -545,7 +539,7 @@
                                                 <p>In 10 Days</p>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-danger">See Schedule</button>
+                                                <button class="btn btn-danger btn-tour-view">See Schedule</button>
                                             </div>
                                         </div>
                                     </div>
@@ -583,7 +577,7 @@
                                                 <p>In 10 Days</p>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-danger">See Schedule</button>
+                                                <button class="btn btn-danger btn-tour-view">See Schedule</button>
                                             </div>
                                         </div>
                                     </div>
@@ -621,7 +615,7 @@
                                                 <p>In 10 Days</p>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-danger">See Schedule</button>
+                                                <button class="btn btn-danger btn-tour-view">See Schedule</button>
                                             </div>
                                         </div>
                                     </div>
@@ -659,7 +653,7 @@
                                                 <p>In 10 Days</p>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-danger">See Schedule</button>
+                                                <button class="btn btn-danger btn-tour-view">See Schedule</button>
                                             </div>
                                         </div>
                                     </div>
@@ -704,6 +698,12 @@
     <script type="text/javascript" src="js/jquery.range-min.js"></script>
     <script type="text/javascript" src="lib/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        $('.btn-tour-view').click(function() {
+            window.location.href = "/HTML/tour-view.html"
+        });
+    </script>
 </body>
 
 </html>
