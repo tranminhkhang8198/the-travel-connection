@@ -142,6 +142,7 @@ img{
 	max-width: 100%;
 }
 .ask-question,
+.create-tour,
 nav,
 .notification-box.active,
 nav ul li a,
@@ -191,6 +192,7 @@ nav ul li:hover > ul,
 
 
 .ask-question,
+.create-tour,
 .login_register ul li a,
 .search-bar form input,
 .search-bar form button,
@@ -299,14 +301,21 @@ header {
 	float: left;
 	margin-top: 0px;
 }
-.ask-question {
+.ask-question{
 	background-color: #fff;
 	padding: 10px 25px;
 	color: #e44d3a !important;
 	font-size: 14px;
 	font-weight: 600;
 }
-.ask-question:hover {
+.create-tour{
+	background-color: #fff;
+	padding: 10px 25px;
+	color: #e44d3a !important;
+	font-size: 14px;
+	font-weight: 600;
+}
+.create-tour:hover {
 	color: #e44d3a;
 }
 
